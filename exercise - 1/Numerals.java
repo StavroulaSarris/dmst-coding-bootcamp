@@ -4,7 +4,6 @@ public class Numerals {
 	
 	public static final String [] digrams = {"Á'","Â'","Ã'","Ä'","Å'","ò'","Æ'","Ç'","È'","É'","Ê'","Ë'","Ì'","Í'","Î'","Ï'","Ð'","Q'","Ñ'","Ó'","Ô'","Õ'","Ö'","×'","Ø'","Ù'","W'",",Á",};
 	public static final char [] roman = {'I', 'V', 'X', 'L', 'C', 'D','M'};
-	//public static final String [] arabic = {"0","1","2","3","4","5","6","7","8","9"};
 	public static final String [] symbols = {"+","-","*","/"};
 	private static Scanner input;
 	
