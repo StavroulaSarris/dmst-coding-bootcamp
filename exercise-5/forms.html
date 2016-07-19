@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+   <style type="text/css">                        
+  
+body {
+background-color: #F5ECCE;
+width: 960px;   
+   margin-left: 50px;  
+   margin-right: 50px; 
+   margin-bottom: 50px;
+   margin-top: 50px;
+   font-size: 25px;
+}  
+   </style>   
+</head>
+
+<html>
+
+    <body>
+	
+      <h1>Complete the Form</h1>
+        <form action="#" th:action="@{/}" th:object="${person}" method="post">
+		<fieldset>
+		  <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" th:field="*{name}"  placeholder="Enter your Name"  /></td>
+                    <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+                </tr>
+
+                <tr>
+                    <td>Surname:</td>
+                    <td><input type="text" th:field="*{surname}"  placeholder="Enter your Surname"  /></td>
+                    <td th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}">Surname Error</td>
+                </tr>
+
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" th:field="*{age}" placeholder="Enter your Age"  /></td>
+                    <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" th:field="*{email}"  placeholder="Enter your E-mail"   /></td>
+                    <td th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" th:field="*{address}"  placeholder="Enter your Address"/></td>
+                    <td th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address Error</td>
+                </tr>
+
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+			</fieldset>
+        </form>
+		
+    </body>
+</html>
